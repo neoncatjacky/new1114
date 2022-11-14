@@ -1,9 +1,17 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.github.neoncatjacky'
 version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+application {
+    mainClassName 'com.github.neoncatjacky.Main'
+}
+
 
 repositories {
     mavenCentral()
